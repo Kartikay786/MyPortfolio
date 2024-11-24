@@ -1,0 +1,114 @@
+.service_sct{
+    min-height: 50vh;
+    padding: 10vh 0 ;
+}
+.service_sct .heading_sct{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #E2F1E7;
+}
+.service_sct .heading_sct .content{
+    min-height: 40vh;
+    width: 70%;
+    padding: 9vh 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.service_sct .heading_sct .content p{
+    font-family: 'Portfolio_l';
+    font-size: 5rem;
+    margin-bottom: 16px;
+}
+
+.service_sct .section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #E2F1E7;
+    cursor: pointer;
+}
+.service_sct .section .content{
+    min-height: 40vh;
+    width: 70%;
+    padding: 9vh 10px;
+    border-top: 0.9px solid #a2a2a242;
+    display: flex;
+    justify-content: space-between;
+}
+.service_sct .section .content p{
+    font-family: 'Portfolio_l';
+    font-size: 4.5rem;
+    margin-bottom: 16px;
+} 
+
+.service_sct .section .content .leftpart{
+    width: 50%;
+
+}
+.service_sct #service_name{
+    font-size: 3rem;
+}
+.service_sct .section .content .right_txt{
+    width: 40%;
+
+}
+.service_sct .section .content .skillbox{
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: start;
+    min-height: 10vh;
+}
+.service_sct .section .content .skillbox .lang{
+    padding: 8px 12px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: 100;
+    height: 5vh;
+    /* border: 1px solid #E2F1E7; */
+    background-color: #172437;
+    color: #E2F1E7;
+    font-family: 'Portfolio_t';
+}
+
+.service_sct .section:hover{
+    background-color: #E2F1E7;
+    color: #172437;
+}
+
+
+@media(max-width:1200px){
+    .service_sct .heading_sct .content{
+        width: 90%;
+    }
+    .service_sct .section .content{
+        width: 90%;
+    }
+}
+
+@media(max-width:768px){
+    .service_sct .heading_sct .content p{
+        font-size: 3.5rem;
+    }
+    .service_sct #service_name{
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:650px){
+    .service_sct .section .content{
+        flex-direction: column;
+        justify-content: start;
+        gap: 28px;
+    }
+    .service_sct .section .content .leftpart{
+        width: 100%;
+    
+    }
+    .service_sct .section .content .right_txt{
+        width: 90%;
+    
+    }
+}

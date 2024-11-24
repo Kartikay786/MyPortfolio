@@ -1,0 +1,38 @@
+
+/* for text bold */
+@font-face {
+  font-family: 'Portfolio_h';
+  src: url('./assets/Fonts/49nn5wajwTdLi5telQzvjmGNc.woff2');
+}
+
+/* for text light */
+@font-face {
+  font-family: 'Portfolio_t';
+  src: url('./assets/Fonts/4DUCFyigHLkZDMSHultGoxWxF6c.woff2');
+}
+
+
+/* for heading bold */
+@font-face {
+  font-family: 'Portfolio_l';
+  src: url('./assets/Fonts/gNMEW3NwSYq_9WD3yHQiFQ.woff2');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #0B192C;
+}
+
+/* #243642
+#387478 
+aliceblue
+https://www.mariusnaujokas.com/
+*/ 

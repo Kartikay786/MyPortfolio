@@ -1,0 +1,120 @@
+.project_sct{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:36px;
+    cursor: pointer;
+    padding-top: 10vh;
+    margin-bottom: 12vh;
+}  
+.project_sct .project_card{
+    width: 70%;
+    background-color: #172437;
+    padding: 22px;
+    color: #E2F1E7;
+} 
+.project_sct .project_card .uppertext{
+    font-family: 'Portfolio_t' ;
+    color: #8d938f;
+}
+.project_sct .project_card .img{
+    background-color: #d3dfd7;
+    display: flex;
+    justify-self: center;
+    margin: 7vh 0;
+    padding: 3vh 0 3vh 0;
+    /* overflow: hidden; */
+}
+.project_sct .project_card .img img{
+    object-fit: cover;
+    width: 750px;
+    height: 54vh;
+    object-position: center;
+}
+.project_sct .project_card .details{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 24px;
+}
+.project_sct .project_card .details .right_txt{
+    display: flex;
+    flex-direction: column;
+    gap: 1.05vh;
+}
+.project_sct .project_card .details .btns{
+    display: flex;
+    gap: 12px;
+}
+.project_sct .project_card .details .btns .git_icon{
+    font-size: 1.8rem;
+}
+.project_sct .project_card .details .btns button{
+    padding: 8px 24px;
+    border-radius: 24px;
+    height: 5vh;
+    min-width: 90px;
+    font-size: 16px;
+    border: 1px solid #E2F1E7;
+    background-color: #172437;
+    color: #E2F1E7;
+    font-family: 'Portfolio_h';
+}
+
+/* hover effect */
+
+.project_sct .project_card:hover{
+    background-color: #E2F1E7;
+    color: #172437;
+}
+
+
+
+@media(max-width:1200px){
+    .project_sct .project_card{
+        width: 90%;
+    }
+}
+
+@media(max-width:900px){
+    .project_sct .project_card .img img{
+        width: 500px;
+        height: 35vh;
+    }
+
+}
+
+@media(max-width:600px){
+    .project_sct .project_card{
+        width: 95%;
+    }
+    .project_sct .project_card .img img{
+        
+        height: 25vh;
+        width: 400px;
+    }
+    .project_sct .project_card .details .btns button{
+        padding: 8px;
+        border-radius: 16px;
+    }
+
+}
+
+@media(max-width:450px){
+    .project_sct .project_card{
+        width: 95%;
+        padding: 8px;
+    }
+    .project_sct .project_card .img img{
+       
+        height: auto;
+        width: 100%;
+    }
+    .project_sct .project_card .details .btns button{
+        padding: 8px;
+        border-radius: 16px;
+    }
+
+}

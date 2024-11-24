@@ -1,0 +1,38 @@
+.header_sct{
+    display: flex;
+    justify-content: center;
+}
+.header_sct .text{
+    width: 70%;
+    min-height: 30vh;
+    padding: 20vh 0vh 10vh;
+}
+.header_sct .text p{
+    font-family: 'Portfolio_l';
+    font-size: 5rem;
+    margin-bottom: 24px;
+    font-weight: 600;
+    color: #E2F1E7;
+}
+.header_sct .text span{
+    font-family:'Portfolio_t';
+    color:#8d938f;
+    font-size:17px
+}
+
+@media(max-width:1200px){
+    .header_sct .text{
+        width: 90%;
+    } 
+}
+
+@media(max-width:768px){
+    .header_sct .text p{
+        font-size: 4rem;
+    } 
+}
+@media(max-width:600px){
+    .header_sct .text p{
+        font-size: 3.5rem;
+    } 
+}

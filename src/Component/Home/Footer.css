@@ -1,0 +1,72 @@
+.footer{
+    padding: 12vh 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 0.9px solid #a2a2a242;
+}
+.footer .contact_box{
+    min-height: 30vh;
+    width: 70%;
+    padding: 10vh 0;
+}
+.footer .contact_box  p{
+    font-family: 'Portfolio_l';
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #E2F1E7;
+    width: 320px;
+}
+.footer .contact_box button{
+    padding: 12px 36px;
+    border-radius: 24px;
+    font-size: 18px;
+    background-color: #E2F1E7;
+    color: #0B192C;
+    font-family: 'Portfolio_h';
+    border: none;
+    margin: 5vh 0;
+}
+.footer .bottom_sct{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.footer .bottom_sct .icons{
+    display: flex;
+    gap: 16px;
+}
+.footer .bottom_sct .icon{
+    height: 4vh;
+    width: 4vh;
+   color: #E2F1E7;
+   font-size: 1.5rem;
+}
+
+@media(max-width:1200px){
+    .footer .contact_box{
+        width: 90%;
+    }
+    .footer .bottom_sct{
+        width: 90%;
+    }
+    .footer{
+        padding-bottom: 6vh;
+        padding-top: 10vh;
+    }
+}
+
+@media(max-width:450px){
+    .footer .bottom_sct{
+        flex-direction: column-reverse;
+        align-items: end;
+        gap: 16px;
+    }
+}
+
+@media(max-width:380px){
+    .footer .contact_box  p{
+        width: 100%;
+    }
+}
