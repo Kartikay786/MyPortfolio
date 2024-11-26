@@ -46,6 +46,39 @@
     border: none;
 }
 
+/* mobile nav */
+
+.mobile_nav{
+    height: 100vh;
+    /* width: 100%; */
+    position: fixed;
+    padding: 5vh;
+    background-color: #0B192C;
+}
+.mobile_nav .close_icn{
+    display: flex;
+    justify-content: end;
+}
+.mobile_nav .close_icn i{
+    font-size: 2.5rem;
+    color: #E2F1E7;
+    font-weight: 100;
+    font-family: 'Portfolio_t';
+    cursor: pointer;
+}
+.mobile_nav .mobile_nav_elem{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+    height: 80vh;
+    justify-content: center;
+}
+.mobile_nav .mobile_nav_elem a{
+    font-family: 'Portfolio_l';
+    color: #E2F1E7;
+    font-size: 3.5rem;
+    text-decoration: none;
+}
 
 @media(max-width:850px){
     .navbar .nav_middle .nav_elem{
@@ -65,5 +98,8 @@
     .navbar .btn button{
         padding: 8px;
         border-radius: 16px;
+    }
+    .mobile_nav{
+        padding: 3vh;
     }
 }

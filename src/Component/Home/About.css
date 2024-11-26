@@ -8,6 +8,8 @@
 .about_sct .textbox{
     min-height: 20vh;
     width: 70%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .about_sct .textbox p{
@@ -15,27 +17,62 @@
     font-size: 5rem;
     margin-bottom: 24px;
     font-weight: 600;
+
     /* width: 50%; */
     color: #E2F1E7;
 }
 .about_sct #para_text{
-    width: 50%;
+    width: 90%
+}
+
+.about_sct .textbox .sphere3d img{
+    height:auto;
+    width: 400px;
 }
 
 @media(max-width:1200px){
     .about_sct .textbox{
         width: 90%;
     }
+   
+    
+}
+
+@media(max-width:900px){
+    .about_sct .textbox{
+       flex-direction: column;
+       gap: 4vh;
+    }
+    .about_sct .textbox .sphere3d{
+        display: flex;
+        justify-content: end;
+        width: 100%;
+    }
+    .about_sct #para_text{
+        width: 70%
+    }
+
 }
 
 @media(max-width:768px){
     .about_sct .textbox p{
         font-size: 3.5rem;
     }
+    .about_sct .textbox .sphere3d img{
+        width: 350px;
+    }
 }
 
 @media(max-width:600px){
     .about_sct #para_text{
         width: 100%;
+    }
+   
+}
+
+
+@media(max-width:405px){
+    .about_sct .textbox .sphere3d img{
+        width: 95%;
     }
 }

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import Home from './Pages/Home'
 import Lenis from 'lenis'
 import 'lenis/dist/lenis.css'
+import { BrowserRouter } from 'react-router'
 
 function App() {
 
@@ -24,9 +25,9 @@ function App() {
   })
 
   return (
-    <>
+    <BrowserRouter>
       <Home />
-    </>
+    </BrowserRouter>
   )
 }
 
