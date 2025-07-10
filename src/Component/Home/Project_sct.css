@@ -1,4 +1,165 @@
-.project_sct{
+.project_sct {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 5vh 2vw;
+    background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+    position: relative; /* To contain the pseudo-element */
+}
+
+.project_sct::before {
+    content: "PROJECTS"; /* The background heading text */
+    position: absolute;
+    top: 0%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    font-size: 10rem; /* Adjust as needed */
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.08); /* Subtle color for the text */
+    text-transform: uppercase;
+    z-index: 0; /* Place behind the content */
+    pointer-events: none; /* Prevent interaction with the text */
+}
+
+@media(max-width:950px){
+    .project_sct::before {
+    content: "PROJECTS";
+    font-size: 7rem;
+    }
+}
+
+@media(max-width:700px){
+    .project_sct::before {
+    content: "PROJECTS";
+    font-size: 5rem;
+    }
+}
+@media(max-width:450px){
+    .project_sct::before {
+    content: "PROJECTS";
+    font-size: 3.5rem;
+    }
+}
+
+.project_sct .project_card {
+    width: 70%;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    color: #1e293b;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    z-index: 1; /* Place above the background text */
+}
+
+.project_sct .project_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Other CSS remains the same */
+
+.project_sct .project_card {
+    width: 70%;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    color: #0c121c;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.project_sct .project_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project_sct .project_card .uppertext {
+    font-family: 'Inter', sans-serif;
+    color: #0c121c;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+.project_sct .project_card .img {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project_sct .project_card .img img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.project_sct .project_card:hover .img img {
+    transform: scale(1.05);
+}
+
+.project_sct .project_card .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project_sct .project_card .details .right_txt {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.project_sct .project_card .details .btns .git_icon{
+    font-size: 1.8rem;
+}
+
+.project_sct .project_card .details .btns .git_icon a{
+   text-decoration: none;
+}  
+
+.project_sct .project_card .details .btns {
+    display: flex;
+    gap: 1rem;
+}
+
+.project_sct .project_card .details .btns button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    border: none;
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.project_sct .project_card .details .btns button:hover {
+    background: linear-gradient(135deg, #06b6d4, #3b82f6);
+}
+
+@media (max-width: 768px) {
+    .project_sct .project_card {
+        width: 90%;
+    }
+
+    .project_sct .project_card .img img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+/* .project_sct{
     min-height: 50vh;
     display: flex;
     flex-direction: column;
@@ -25,7 +186,6 @@
     justify-self: center;
     margin: 7vh 0;
     padding: 3vh 0 3vh 0;
-    /* overflow: hidden; */
 }
 .project_sct .project_card .img img{
     object-fit: cover;
@@ -70,7 +230,6 @@
     cursor: pointer;
 }
 
-/* hover effect */
 
 .project_sct .project_card:hover{
     background-color: #172437;
@@ -124,4 +283,4 @@
         border-radius: 16px;
     }
 
-}
+} */

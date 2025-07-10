@@ -1,0 +1,35 @@
+.project_sct{
+  min-height: 50vh;
+  padding: 0vh 0 5vh ;
+}
+.project_sct .heading_sct{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #E2F1E7;
+  background: linear-gradient(135deg, #0c121c, #042351, #0045ac9c);
+}
+.project_sct .heading_sct .content{
+  min-height: 40vh;
+  width: 70%;
+  padding: 9vh 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.project_sct .heading_sct .content p{
+  font-family: 'Portfolio_l';
+  font-size: 5rem;
+  margin-bottom: 16px;
+}
+
+.project_st{
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 5vh 2vw;
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  position: relative;
+}

@@ -17,7 +17,10 @@
     font-size: 5rem;
     margin-bottom: 24px;
     font-weight: 600;
-
+    color: #ffffff;
+    background: linear-gradient(90deg, #3b82f6, #22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     /* width: 50%; */
     color: #E2F1E7;
 }

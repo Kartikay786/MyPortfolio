@@ -1,4 +1,209 @@
-.header_sct{
+/* Header container */
+.header_sct {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0c121c, #042351, #0045ac9c);
+    background-size: 300% 300%;
+    animation: gradientAnimation 8s ease infinite;
+    color: #ffffff;
+    padding: 0 5vw;
+  }
+  
+  /* Inner content container */
+  .header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    gap: 3rem;
+    color: #525462;
+  }
+  
+  /* Left section */
+  .left_section {
+    max-width: 600px;
+  }
+  
+  .left_section h1 {
+    font-family: 'Portfolio_h';
+    font-size: 5rem;
+    margin-bottom: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(90deg, #3b82f6, #22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* width: 50%; */
+    color: #E2F1E7;
+  }
+  
+  .left_section h1 span {
+    display: block;
+    font-size: 3rem;
+  }
+  
+  .left_section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #e2e8f0;
+    font-family: 'Portfolio_t';
+  }
+  
+  .cta_button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #06b6d4;
+    border: none;
+    color: #ffffff;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .cta_button:hover {
+    background-color: #3b82f6;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Right section */
+  .right_section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .circle_effect {
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    background: radial-gradient(circle, #ffffff33, #ffffff10);
+    border-radius: 50%;
+    z-index: 1;
+    animation: pulse 2.5s infinite ease-in-out;
+  }
+  
+  .profile_image {
+    position: relative;
+    z-index: 2;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Animations */
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+  }
+
+  @media(max-width:950px){
+    .right_section{
+      display: none;
+    }
+  }
+
+  @media(max-width:500px){
+    .left_section h1{
+      font-size: 4rem;
+    }
+  }
+  
+  /* Responsive Design
+  
+
+/* .header_sct {
+    display: flex;  
+    padding-top: 10vh;
+    justify-content: center;
+    background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+    color: white;
+    padding: 5vh 2vw;
+}
+
+.header_sct .text {
+    width: 80%;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.header_sct .text .left p {
+    margin-top: 10vh;
+    font-family: 'Inter', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(90deg, #3b82f6, #22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header_sct .text .left span {
+    font-family: 'Roboto', sans-serif;
+    color: #94a3b8;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+.header_sct .text .div_cir {
+    height: 150px;
+    width: 150px;
+    background: linear-gradient(145deg, #0f172a, #334155);
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width: 768px) {
+    .header_sct .text .left p {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .header_sct .text .left p {
+        font-size: 2.5rem;
+    }
+} */
+
+
+/* .header_sct{
     display: flex;
     justify-content: center;
 }
@@ -42,4 +247,4 @@
     .header_sct .text .left p{
         font-size: 3.5rem;
     } 
-}
+} */

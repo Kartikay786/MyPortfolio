@@ -2,7 +2,10 @@ import { useEffect, useState } from 'react'
 import Home from './Pages/Home'
 import Lenis from 'lenis'
 import 'lenis/dist/lenis.css'
-import { BrowserRouter } from 'react-router'
+import { BrowserRouter, Route, Routes } from 'react-router'
+import Project from './Pages/Project'
+import Contact from './Pages/Contact'
+import AdminLayout from './Pages/Admin/AdminLayout'
 
 function App() {
 
@@ -10,12 +13,6 @@ function App() {
     // Initialize Lenis
     const lenis = new Lenis();
 
-    // Listen for the scroll event and log the event data
-    // lenis.on('scroll', (e) => {
-    //   console.log(e);
-    // });
-
-    // Use requestAnimationFrame to continuously update the scroll
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
@@ -26,7 +23,16 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Home />
+      <Routes>
+        
+        <Route path='/' element={<Home/>}/>
+        <Route path='/projects' element={<Project/>} />
+        <Route path='/contact' element={<Contact/>} />
+
+        <Route path='/kuseradmin' element={<AdminLayout/>} >
+          
+        </Route>
+      </Routes>
     </BrowserRouter>
   )
 }

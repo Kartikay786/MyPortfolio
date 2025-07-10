@@ -1,12 +1,13 @@
 .service_sct{
     min-height: 50vh;
-    padding: 10vh 0 ;
+    padding: 0vh 0 5vh ;
 }
 .service_sct .heading_sct{
     width: 100%;
     display: flex;
     justify-content: center;
     color: #E2F1E7;
+    background: linear-gradient(135deg, #0c121c, #042351, #0045ac9c);
 }
 .service_sct .heading_sct .content{
     min-height: 40vh;
@@ -40,6 +41,9 @@
     font-family: 'Portfolio_l';
     font-size: 4.5rem;
     margin-bottom: 16px;
+    background: linear-gradient(90deg, #3b82f6, #22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 } 
 
 .service_sct .section .content .leftpart{
@@ -51,6 +55,10 @@
 }
 .service_sct .section .content .right_txt{
     width: 40%;
+
+}
+.service_sct .section .content .right_txt p{
+    color: #0c121c;
 
 }
 .service_sct .section .content .skillbox{
